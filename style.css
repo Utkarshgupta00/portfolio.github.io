@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300;500&family=Ubuntu:wght@400;700&display=swap');
+*{
+padding : 0px;
+margin : 0px;
+}
+span{
+color : red;
+}
+.header span{
+color : red;
+font-size : 40px;
+}
+.header{
+width : 100%;
+padding : 20px;
+display : flex;
+align-items : center;
+justify-content : space-between;
+background : black;
+position : fixed;
+z-index : 999;
+}
+.header h1{
+cursor : pointer;
+color : white;
+font-size : 30px;
+padding-left : 30px;
+}
+.navbar ul{
+margin-right : 30px;
+}
+.navbar ul li{
+display : inline;
+margin : 14px;
+position : relative;
+}
+.navbar ul li a{
+color : white;
+text-decoration : none;
+transition : 0.5s;
+cursor : pointer;
+}
+.navbar i{
+color : white;
+font-size : 13px;
+display : none;
+}
+.navbar ul li a:hover{
+font-size : 30px;
+color : red;
+}
+.navbar ul li::after{
+content : "";
+background-color: red;
+height : 1px;
+width : 0%;
+position : absolute;
+left : 0%;
+bottom : -5px;
+transition : 0.5s;
+}
+.navbar ul li:hover::after{
+width : 100%;
+}
+.navbar {
+color : white;
+}
+.hero{
+background-image : linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0.7)),url(img/hero1.jpg);
+background-size : cover;
+background-repeat: no-repeat;
+height : 90vh;
+background-position : center;
+color : white;
+padding : 40px 60px;
+overflow : hidden;
+}
+.hero h4{
+padding-top : 170px;
+margin : 10px;
+margin-top : 40px;
+font-size : 20px;
+
+}
+.hero h1{
+font-size : 80px;
+margin : 10px;
+letter-spacing : 1px;
+cursor :pointer;
+font-family : poppins;
+}
+.hero h5{
+margin : 10px;
+font-size : 20px;
+}
+.hero span{
+font-size : 20px;
+color : red;
+}
+.hero i{
+    margin: 5px;
+    font-size : 20px;
+    margin-top : 80px;
+}
+.hero i:hover{
+    color : red;
+    font-size : 24px;
+}
+.hire{
+background : transparent;
+color : white;
+border : 0px;
+outline : none;
+width : 300px;
+margin : 30px;
+height : 80px;
+transition : 1s;
+box-shadow : 2px 2px 8px red;
+
+}
+.logo a{
+    text-decoration: none;
+    color : white;
+}
+.hire a{
+color : white;
+text-decoration : none;
+font-weight : bold;
+font-size : 25px;
+cursor : pointer;
+}
+.hire:hover{
+background : red;
+box-shadow : none;
+}
+.roll{
+position : absolute;
+height : 1px;
+width :50%;
+overflow : hidden;
+background : linear-gradient(to right,red,blue);
+border-radius : 3px;
+cursor : pointer;
+animation : ball 5s infinite;
+}
+@keyframes ball{
+0%{
+left : 0px;
+top : 0px;
+}
+50%{
+top : 0px;
+left : 50%;
+}
+100%{
+top : 0px;
+left : 0px;
+}
+}
+.info{
+height : 300px;
+}
+
+
+@media (max-width : 700px){
+.header{
+width : 70%;
+}
+.navbar{
+top : 0px;
+width : 150px;
+position : absolute;
+z-index : 5;
+right : -150px;
+background : black;
+transition : 1s;
+}
+.navbar ul li a:hover{
+font-size : 25px;
+}
+.navbar ul li:hover::after{
+display : none;
+}
+.navbar i{
+display : block;
+}
+.blind ul li{
+display : block;
+}
+.bars{
+display : inline;
+color : white;
+position : absolute;
+right : 50px;
+}
+.hero{
+height : 90vh;
+}
+.hero h4{
+margin-top : 30px;
+margin-left : -30px;
+font-size : 10px;
+}
+.hero h1{
+font-size : 30px;
+margin-left : -30px;
+}
+.hero h5{
+margin-left : -30px;
+}
+.logo a{
+    color : white;
+    text-decoration : none;
+}
+.hero i{
+    position : relative;
+    top : 30px;
+    right : 30px;
+    margin: 5px;
+    font-size : 15px;
+    margin-top : 10px;
+    display : block;
+}
+.hero i:hover{
+    font-size : 20px;
+    color : red;
+}
+.hire{
+margin-left : -40px;
+width : 180px;
+height : 60px;
+}
+}
+
+#information{
+}
+#information h3{
+text-align : center;
+font-size : 40px;
+font-family : poppins;
+padding-top : 80px;
+font-family : ubuntu;
+font-weight : bold;
+}
+#information h4{
+text-align : center;
+font-size : 18px;
+font-family : san-serif;
+font-weight : bold;
+}
+#information h4 span{
+color : red;
+}
+.aboutg{
+width : 30%;
+height : 300px;
+z-index : 0;
+position : relative;
+margin : 5%;
+float : left;
+background-image : url(img/me.png);
+background-position : center;
+background-size : auto;
+background-repeat : no-repeat;
+
+}
+.aboutd{
+height : 300px;
+width : 50%;
+margin : 5%;
+float : left;
+}
+.aboutd h5{
+margin-bottom : 20px;
+font-size : 25px;
+padding : 8px;
+}
+.aboutd p{
+text-align : justify;
+padding : 10px;
+}
+#services{
+height : 500px;
+width : 100%;
+display : flex;
+flex-direction : column;
+justify-content : center;
+background : black;
+}
+#services h1{
+text-align : center;
+font-size : 40px;
+margin-top : 80px;
+color : #fff;
+}
+#services h3{
+text-align : center;
+color : white;
+}
+#services h3 span{
+color : red;
+}
+.servicer{
+height : 450px;
+justify-content : center;
+display : flex;
+align-items : center;
+font-family : ubuntu;
+}
+.col3{
+height : 190px;
+width : 25%;
+background : black;
+margin : 50px;
+border-radius : 10px;
+box-shadow : 2px 5px 5px red;
+transition : 1s;
+}
+.col3 i{
+color : red;
+padding-top : 5px;
+text-align : center;
+font-size : 50px;
+padding-left : 45%;
+cursor : pointer;
+transition : 1s;
+}
+.col3 h2{
+color : white;
+font-size : 40px;
+margin-top : 30px;
+text-align : center;
+}
+.col3:hover{
+background : red;
+color : white;
+}
+.col3:hover i{
+color : white;
+}
+#skills{
+height : 600px;
+display : flex;
+flex-direction : column;
+justify-content : center;
+
+}
+#skills h1{
+text-align : center;
+font-size : 40px;
+padding-top : 30px;
+font-family : ubuntu;
+font-weight : bold;
+}
+#skills h2{
+text-align : center;
+margin-top : 10px;
+font-size : 20px;
+}
+.col4{
+height : 200px;
+width : 40%;
+margin : 5%;
+float : left;
+}
+.col4 p{
+margin-top : 10px;
+text-align : justify;
+}
+.info{
+height : 20px;
+display : flex;
+justify-content : space-between;
+}
+.line{
+height : 5px;
+width : 100%;
+background : grey;
+margin : 10px 0px;
+position : relative;
+}
+.line::before{
+content : "";
+position : absolute;
+height : 100%;
+background : red;
+left : 0px;
+top : 0;
+}
+.java::before{
+width : 70%;
+}
+.html::before{
+width : 90%;
+}
+.css::before{
+width : 85%;
+}
+.react::before{
+width : 60%;
+}
+.fill span{
+color : black;
+font-size : 15px;
+font-weight : 500;
+font-family : poppins;
+}
+.col41{
+position : relative;
+}
+.read{
+position : absolute;
+right : 10px;
+bottom : 5px;
+width : 150px;
+height : 20px;
+border-radius : 20px;
+text-align : center;
+font-size : 20px;
+color : red;
+border : 2px solid red;
+background : transparent;
+padding : 10px;
+text-decoration : none;
+font-family : ubuntu;
+font-weight : 500;
+cursor : pointer;
+transition : 0.5s;
+margin-top : 30px;
+}
+.read:hover{
+color : white;
+background : red;
+}
+#projects{
+display : flex;
+flex-direction : column;
+justify-content : center;
+align-items : center;
+background : black;
+}
+#projects h3{
+color : white;
+font-size : 15px;
+}
+#projects h1{
+margin-top : 80px;
+text-align : center;
+font-size : 40px;
+color : white;
+}
+.row5{
+width : 60%;
+margin : 30px auto;
+
+}
+.col5{
+width : 50%;
+height : 50%;
+
+}
+.col51{
+height : 200px;
+width : 60%;
+}
+.img{
+height : 100%;
+width : 100%;
+}
+#contact{
+display : flex;
+flex-direction : column;
+justify-content : space-between;
+}
+#contact h1{
+text-align : center;
+margin-top : 50px;
+font-size : 40px;
+font-family : ubuntu;
+font-weight : bold;
+}
+#contact h3{
+text-align : center;
+font-size : 20px;
+font-family : ubuntu;
+}
+.row6{
+display : flex;
+justify-content : space-between;
+align-items : center;
+}
+.col6{
+height : 400px;
+width : 40%;
+margin : 60px;
+
+}
+.col6 h3{
+font-size :20px;
+margin : 30px;
+text-align : none;
+}
+.col6 i{
+color : red;
+display : block;
+margin : 20px;
+font-size : 20px;
+}
+.col6 i b{
+font-size : 13px;
+color : black;
+font-family : poppins;
+font-weight : bold;
+margin-left : 5px;
+}
+.inp{
+padding : 10px;
+width : 36%;
+height : 20px;
+margin : 10px;
+}
+.inp1{
+width : 80%;
+}
+.btn1{
+margin : 7px;
+width : 170px;
+height : 50px;
+background : red;
+color : white;
+outline : none;
+border : none;
+padding : 10px;
+font-family : ubuntu;
+font-weight : bold;
+border-radius : 8px;
+}
+#by{
+width : 100%;
+height : 40px;
+background : black;
+}
+#by h5{
+position : relative;
+top : 15px;
+text-align : center;
+color : white;
+font-family : poppins;
+}
+
+
+
+
+
+
+
+
+@media (max-width : 700px){
+
+.header{
+width : 100%;
+padding : 5px;
+}
+.aboutg{
+width : 90%;
+margin : 5%;
+}
+.aboutd{
+width : 90%;
+margin : 5%;
+}
+#services{
+height : auto;
+width : 100%;
+display : flex;
+flex-direction : column;
+justify-content : center;
+background : black;
+}
+.servicer{
+height : auto;
+display : block;
+}
+.col3{
+width : 90%;
+margin : 15% 5%;
+}
+
+#skills{
+height : auto;
+}
+#skills h1{
+text-align : center;
+font-size : 40px;
+margin-top : 20px;
+}
+#skills h2{
+text-align : center;
+margin-top : 10px;
+font-size : 20px;
+}
+.col4{
+height : 250px;
+width : 90%;
+margin : 5%;
+float : left;
+}
+#contact{
+display : flex;
+flex-direction : column;
+justify-content : space-between;
+}
+#contact h1{
+text-align : center;
+margin-top : 40px;
+font-size : 40px;
+font-family : ubuntu;
+font-weight : bold;
+}
+#contact h3{
+text-align : center;
+font-size : 20px;
+font-family : ubuntu;
+}
+.row6{
+display : block;
+align-items : center;
+height : auto;
+}
+.col6{
+height : auto;
+width : 90%;
+margin-top : 90px;
+margin-left : 8px;
+}
+.col6 h3{
+font-size :20px;
+margin : 30px;
+text-align : none;
+}
+.col6 i{
+color : red;
+display : block;
+margin : 20px;
+font-size : 20px;
+}
+.col6 i b{
+font-size : 13px;
+color : black;
+font-family : poppins;
+font-weight : bold;
+margin-left : 5px;
+}
+.inp{
+padding : 10px;
+width : 80%;
+height : 20px;
+}
+.inp1{
+width : 80%;
+text-align : justify;
+}
+.btn1{
+cursor :pointer;
+margin : 7px;
+width : 170px;
+height : 50px;
+background : red;
+color : white;
+outline : none;
+border : none;
+padding : 10px;
+font-family : ubuntu;
+font-weight : bold;
+border-radius : 8px;
+}
+.row5{
+width : 80%;
+margin : 30px auto;
+
+}
+.col5{
+width : 80%;
+height : 50%;
+
+}
+.col51{
+height : 300px;
+width : 80%;
+}
+.read{
+height : 20px;
+width : 120px;]
+font-size : 20px;
+position : absolute;
+bottom : 0px;
+}
+.by{
+margin-bottom : -5px;
+}
+.by h5{
+font-size : 8px;
+}
+}
